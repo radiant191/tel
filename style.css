@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 1000px;
+}
+.header{
+    background-color: #fbd600;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.navbar{
+    max-width: 1280px;
+    margin: auto;
+    display: flex; /* сделали элемент гибким*/
+    justify-content: space-between;
+    align-items: center;
+}
+.header-image{
+    height: 75px;
+    width: 210px;
+    margin-left: 90px;
+}
+.navbar-menu{
+    margin: 0;
+    padding: 0;
+    list-style: none; /* отключаем точки у списка*/
+    display: flex;
+    text-align: center;
+    font-weight: 600;
+}
+.navbar-item{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: large;
+}
+.navbar-link{
+    text-decoration: none;
+    color: black;
+}
+.main-head{
+    max-width: 1280px;
+    margin-left: 144.5px;
+    padding-top: 54px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 90px;
+}
+.inspire{
+    margin-bottom: 20px;
+}
+.simple{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 550;
+}
+.tel{
+    width: 300px;
+    height: 500px;
+    display: flex;
+}
