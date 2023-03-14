@@ -1,0 +1,311 @@
+@import 'variables';
+@import 'mixins';
+
+/************
+* Global
+*/
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-stack;
+}
+
+.section-headline {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 0.7em;
+}
+
+.section-subheading {
+  font-size: 24px;
+}
+
+.content {
+  font-size: 18px;
+  max-width: 30em;
+
+  @include marginx-auto;
+
+  @media (min-width: 992px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+}
+
+.site-section {
+  padding-top: 9em;
+  padding-bottom: 3em;
+}
+
+.section-header{
+  text-align: center;
+  @include marginx-auto;
+
+  @media (min-width: 992px) {
+    width: 80%;
+  }
+}
+
+/************
+* Cover
+*/
+.cover-wrapper {
+  background-color: $strong-color;
+  display: table;
+  width: 100%;
+  min-height: 100%;
+
+  a {
+    color: $text-base-color;
+  }
+}
+.cover-wrapper-inner {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+
+
+/************
+* Navigation
+*/
+.navbar-default {
+  border: none;
+  background-color: $strong-color;
+
+  .navbar-nav>li>a, .navbar-text>a {
+    color: $text-base-color;
+    font-weight: 700;
+
+    &:hover, &:focus {
+      color: $text-base-hover;
+    }
+  }
+
+  .navbar-navmenu>li>a {
+    font-size: 22px;
+  }
+
+  .navbar-sitetitle {
+    margin-left: 0;
+    font-size: 34px;
+    a {
+    text-decoration: none;
+    }
+  }
+
+  .navbar-brand {
+    height: auto;
+    margin-right: 5px;
+    img {
+      padding-top: 3px;
+    }
+  }
+
+  .navbar-collapse {
+    background-color: $light-color;
+
+    @media (min-width: $screen-sm) {
+      background-color: $strong-color ;
+    }
+  }
+
+  .navbar-navmenu {
+    background-color: $light-color;
+    padding-top: 16px;
+
+    @media (min-width: $screen-sm) {
+      background-color: $strong-color ;
+    }
+  }
+}
+
+
+/************
+* Intro Section
+*/
+.intro {
+  text-align: center;
+
+  @media (min-width: $screen-md) {
+    text-align: left;
+  }
+
+  .intro-headline {
+    padding-top: 2em;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 3em;
+    }
+    @media (min-width: $screen-lg) {
+      margin-top: 2em;
+    }
+  }
+}
+
+.os-list {
+  list-style: none;
+  font-size: 46px;
+
+  padding-left: 0;
+  padding-top: 0.6em;
+
+  li {
+    display: inline-block;
+
+    @media (min-width: $screen-xs) {
+      padding-right: 0.8em;
+    }
+  }
+}
+
+.intro-mockup {
+  overflow: hidden;
+  padding: 6em 0;
+  text-align: center;
+
+  @media (min-width: $screen-md) {
+    text-align: right;
+  }
+
+  img {
+    width: 60%;
+
+    @media (min-width: $screen-sm) {
+        width: 50%;
+    }
+    @media (min-width: $screen-md) {
+      width: 100%;
+    }
+  }
+}
+
+
+/************
+* Features Section
+*/
+.features-header {
+  margin-bottom: 7.5em;
+}
+
+.features-item-title {
+  font-weight: 700;
+}
+
+.features-icon {
+  text-align: center;
+
+  @media (min-width: $screen-md) {
+    text-align: right;
+  }
+
+  .fa {
+    font-size: 50px;
+    margin-top: 20px
+  }
+}
+
+.features-item {
+  text-align: center;
+  margin-bottom: 3.5em;
+
+  @media (min-width: $screen-md) {
+    text-align: left;
+  }
+}
+
+
+/************
+* Contact Section
+*/
+.contact {
+  background: $dark-color;
+}
+
+.contact-headline {
+  color: $strong-color;
+}
+
+.contact-subheading {
+  color: $text-alt-color;
+}
+
+.contact-subscribe {
+    width: 80%;
+    text-align: center;
+
+    @include marginx-auto;
+    margin-bottom: 4.2em;
+}
+
+.contact-subscribe-btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 2em auto 2.5em;
+
+  @media (min-width: $screen-sm) {
+    margin: 0;
+  }
+}
+
+.contact-social {
+  color: $strong-color;
+  font-size: 50px;
+
+  list-style: none;
+  text-align: center;
+
+  padding: 0;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    color: $strong-color;
+
+    &:hover, &:focus {
+      color: $text-base-hover;
+    }
+  }
+}
+
+
+/************
+* Footer
+*/
+footer {
+  background: $dark-color;
+  color: $text-alt-color;
+
+  font-size: 16px;
+  padding-bottom: 1.6em;
+
+  @media (min-width: $screen-md) {
+    padding-top: 4em;
+  }
+}
+
+.footer-box {
+  margin-top: 3em;
+  text-align: center;
+
+  @media (min-width: $screen-md) {
+    text-align: left;
+  }
+}
+
+.footer-links {
+  list-style: none;
+  a {
+    color: $light-color;
+
+    &:hover, &:focus {
+      color: $text-base-hover;
+      text-decoration: none;
+    }
+  }
+}

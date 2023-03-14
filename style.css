@@ -20,7 +20,8 @@ body{
 .header-image{
     height: 75px;
     width: 210px;
-    margin-left: 90px;
+    margin-right: 300px;
+  
 }
 .navbar-menu{
     margin: 0;
@@ -41,10 +42,9 @@ body{
 }
 .main-head{
     max-width: 1280px;
-    margin-left: 144.5px;
-    padding-top: 54px;
+    margin-left: 300.5px;
+  /*  padding-top: 54px; */
     display: flex;
-    flex-direction: column;
     padding-left: 90px;
 }
 .inspire{
@@ -55,8 +55,50 @@ body{
     font-size: 24px;
     font-weight: 550;
 }
-.tel{
-    width: 300px;
-    height: 500px;
+.tel1{
+    height: 450px;
+    display: inline;
+    padding-left: 400px;
+}
+.lorem{
+    margin-top: 20px;
+
+}
+.main-text{
+    flex-direction: column;
+    padding-top: 30px;
+    
+}
+.apple{
+    width: 40px;
+    height: 40px;
+}
+.android{
+    width: 40px;
+    height: 40px;
+}
+.windows{
+    width: 40px;
+    height: 40px;
+}
+.icon-head{
+    margin-top: 20px;
+}
+.tel-head{
+    margin-right: 200px;
+}
+.radiobut{
+    margin-top: 15px;
     display: flex;
+    justify-content: center;
+    
+}
+.radio11{
+    margin-right: 20px;
+}
+.radio22{
+    margin-right: 20px;
+}
+.radio33{
+    margin-right: 20px;
 }
